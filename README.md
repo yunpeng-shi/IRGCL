@@ -13,9 +13,9 @@ There are 4 options of ``crpt_type`` argument for ``Nonuniform_Topology.m``.
 ``uniform``: Each corrupted relative permutations <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are i.i.d drawn
 from the uniform distribution in the space of permutation group.
 
-``self-consistent``: The corrupted <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are relative permutations of another set of absolute permutations. Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{crpt}'}"> where those absolute permutations are different from ground truth and are i.i.d drawn from the uniform distribution in the space of permutation group.
+``self-consistent``: The corrupted <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are relative permutations of another set of absolute permutations. Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{crpt}'}"> where those absolute permutations are different from the ground truth and are i.i.d drawn from the uniform distribution in the space of permutation group.
 
-``local-biased``: self-consistent corruption with additional sampling rejection procedure so that the expectation of rel. permutations deviates away from the ground truth.
+``local-biased``: Self-consistent corruption with additional sampling rejection procedure so that the expectation of relative permutations deviates away from the ground truth.
 
-``local-adv``: super malicious corruption that replaces the underlying absolute pemutation from ground truth $P_i^* $ to $P_i^{crpt}$. Namely $X_{ij} = P_i^{crpt} P_j^{* }'$. Addtional noise is added to the corruption, otherwise the recovery of ground truth is ill-posed.
+``local-adv``: Extremely malicious corruption that replaces the underlying absolute pemutations from ground truth from <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^*}"> to <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^{crpt}}"> . Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{* }'}">. Addtional noise is added to the corruption, otherwise the recovery of the ground truth can be ill-posed.
 
