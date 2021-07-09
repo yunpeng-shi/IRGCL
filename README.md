@@ -10,10 +10,10 @@ We provide 6 different corruption models. 4 for nonuniform topology and 2 for un
 
 There are 4 options of ``crpt_type`` argument for ``Nonuniform_Topology.m``.
 
-``uniform``: each corrupted relative permutations <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are i.i.d drawn
+``uniform``: Each corrupted relative permutations <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are i.i.d drawn
 from the uniform distribution in the space of permutation group.
 
-``self-consistent``: corrupted<img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are relative permutations of another set of absolute permutations (different from ground truth). Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{crpt}'}">
+``self-consistent``: The corrupted <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are relative permutations of another set of absolute permutations. Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{crpt}'}">
 
 ``local-biased``: self-consistent corruption with additional sampling rejection procedure so that the expectation of rel. permutations deviates away from the ground truth.
 
