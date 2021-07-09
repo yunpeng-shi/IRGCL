@@ -10,7 +10,7 @@ We provide 6 different corruption models. 4 for nonuniform topology and 2 for un
 
 There are 4 options of ``crpt_type`` argument for ``Nonuniform_Topology.m``.
 
-``uniform``: each corrupted relative permutations <img src="https://render.githubusercontent.com/render/math?math=\color{blue} X_{ij}"> i.i.d uniformly drawn
+``uniform``: each corrupted relative permutations <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> i.i.d uniformly drawn
 
 ``self-consistent``: corrupted $X_{ij}$ are rel. permutations of another set of absolute permutations (different from ground truth). Namely $X_{ij} = P_i^{crpt} P_j^{crpt}'$
 
