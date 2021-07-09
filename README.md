@@ -17,5 +17,5 @@ from the uniform distribution in the space of permutation group.
 
 ``local-biased``: Self-consistent corruption with additional sampling rejection procedure so that the expectation of relative permutations deviates away from the ground truth.
 
-``local-adv``: Extremely malicious corruption that replaces the underlying absolute pemutations from ground truth from <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^*}"> to <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^{crpt}}"> . Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{* }'}">. Addtional noise is added to the corruption, otherwise the recovery of the ground truth can be ill-posed.
+``local-adv``: Extremely malicious corruption that replaces the underlying absolute pemutations from ground truth <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^*}"> to <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^{crpt}}">. Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{* }'}">. Addtional high noise is added to the corruption, otherwise the recovery of the ground truth can be ill-posed.
 
