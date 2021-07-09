@@ -21,4 +21,3 @@ from the uniform distribution in the space of permutation group.
 ``local-adv``: Extremely malicious corruption that replaces the underlying absolute pemutations from ground truth <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^*}"> to <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{P_i^{crpt}}">. Namely <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij} = P_i^{crpt} P_j^{* }'}">. Additional high noise is added to the corruption, otherwise the recovery of the ground truth can be ill-posed.
 
 For ``Uniform_Topology.m``, there are 2 options of ``crpt_type``: ``uniform`` and ``self-consistent``.
-
