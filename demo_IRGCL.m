@@ -14,7 +14,7 @@ CEMP_parameters.rate = 1.2;
 
 % IRGCL paramters
 IRGCL_options.max_iter = 100;
-IRGCL_options.alpha_init = 1.2;
+IRGCL_options.alpha_init = 1;
 IRGCL_options.alpha_max = 40;
 IRGCL_options.rate = 1.2;
 IRGCL_options.cycle_info_ratio = 1-1./((1:IRGCL_options.max_iter)+1);
