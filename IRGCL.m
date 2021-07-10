@@ -21,7 +21,8 @@
 
 
 %% Output:
-%% X_est: nd by nd block matrix of the estimated relative permutions
+%% X_est: nd by nd block matrix of the estimated relative permutations
+%% P_est: nd by d block matrix of the estimated absolute permutations
 
 %% Reference
 %% [1] Yunpeng Shi, Shaohan Li and Gilad Lerman. 
@@ -29,7 +30,7 @@
 
 
 
-function[X_est] = IRGCL(AdjMat, X, CEMP_parameters, IRGCL_options, verbose)
+function[X_est, P_est] = IRGCL(AdjMat, X, CEMP_parameters, IRGCL_options, verbose)
 
     X = X-diag(diag(X));
     AdjMat = AdjMat - diag(diag(AdjMat));
@@ -163,7 +164,7 @@ function[X_est] = IRGCL(AdjMat, X, CEMP_parameters, IRGCL_options, verbose)
         X_est = X_est_new;
         alpha = min(rate_irgcl*alpha, alpha_max);
     end
-
+    P_est = PMat;
     if verbose
         disp('DONE!');
     end
