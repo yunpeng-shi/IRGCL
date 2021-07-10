@@ -3,7 +3,7 @@ n=100; p=1; d=10; p_node_crpt=0.4; p_edge_crpt=0.6; crpt_type='local-adv';
 [AdjMat, CrptMat, Ind, X, X_orig] = Nonuniform_Topology(n,d,p,p_node_crpt,p_edge_crpt,crpt_type);
 
 % for uniform corruption use the following code
-%n=100; p=1; d=10; q=0.92; crpt_type='uniform';
+%n=100; p=1; d=10; q=0.9; crpt_type='uniform';
 %[AdjMat, CrptMat, Ind, X, X_orig] = Uniform_Topology(n,d,p,q,crpt_type);
 
 
