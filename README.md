@@ -8,7 +8,7 @@ Put all the files in the same directory and run ``demo_IRGCL.m``. It calls funct
 ## Various Corruption Models
 We provide 6 different corruption models. 4 for nonuniform topology and 2 for uniform toplogy. Uniform/Nonuniform toplogy refers to whether the corrupted subgraph is Erdos Renyi or not. In other words, the choice of Uniform/Nonuniform toplogy decides how to select edges for corruption. In ``Uniform_Topology.m``, two nodes are connected with probability ``p``. Then edges are independently drawn with probability ``q`` for corruption. In ``Nonuniform_Topology.m``, two nodes are connected with probability ``p``. Then with probability ``p_node_crpt`` a node is selected so that its neighboring edges will be corrupted. Next, for each selected node, with probability ``p_edge_crpt`` an edge (among the neighboring edges of the selected node) is corrupted. 
 
-The argument ``crpt_type`` in the two functions decide how the corrupted relative permutations are generated for those selected edges. In ``Uniform_Topology.m``, there are 2 options of ``crpt_type``: ``uniform`` and ``self-consistent``.
+The argument ``crpt_type`` in the two functions determines how the corrupted relative permutations are generated for those selected edges. In ``Uniform_Topology.m``, there are 2 options of ``crpt_type``: ``uniform`` and ``self-consistent``.
 In ``Nonuniform_Topology.m``, there are the following 4 options of ``crpt_type``.
 
 ``uniform``: The corrupted relative permutations <img src="https://render.githubusercontent.com/render/math?math=\color{red} \mathbf{X_{ij}}"> are i.i.d follows uniform distribution over the space of permutation group.
