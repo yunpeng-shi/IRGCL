@@ -89,7 +89,7 @@ function[X_est, P_est] = IRGCL(AdjMat, X, CEMP_parameters, IRGCL_options, verbos
     Weights = A.*AdjMat; % edge weights
     row_sum = sum(Weights,2);
     Weights(row_sum==0,:)=1; % avoid zero rowsums
-    row_sum(row_sum==0)=d;
+    row_sum(row_sum==0)=n;
     Weights = diag(1./row_sum)*Weights; % weight normalization
     Weight_cemp=kron(Weights, ones(d));
     S = X.*Weight_cemp; % normalized GCW
@@ -132,7 +132,7 @@ function[X_est, P_est] = IRGCL(AdjMat, X, CEMP_parameters, IRGCL_options, verbos
         if strcmp(IRGCL_options.LS_solver,'PPM') % projected power method
             row_sum = sum(Weights,2);
             Weights(row_sum==0,:)=1; % avoid zero rowsums
-            row_sum(row_sum==0)=d;
+            row_sum(row_sum==0)=n;
             Weights = diag(1./row_sum)*Weights;
             Weight_cemp=kron(Weights, ones(d));
             S = X.*Weight_cemp;
@@ -144,7 +144,7 @@ function[X_est, P_est] = IRGCL(AdjMat, X, CEMP_parameters, IRGCL_options, verbos
         if strcmp(IRGCL_options.LS_solver,'Spectral') % weighted spectral method
             row_sum = sum(Weights,2);
             Weights(row_sum==0,:)=1; % avoid zero rowsums
-            row_sum(row_sum==0)=d;
+            row_sum(row_sum==0)=n;
             Weights = diag(1./row_sum)*Weights;
             Weight_cemp=kron(Weights, ones(d));
             S = X.*Weight_cemp;
