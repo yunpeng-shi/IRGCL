@@ -1,6 +1,6 @@
 %% Author: Yunpeng Shi and Shaohan Li
 %%------------------------------------------------
-%% function for generating data that follows non-uniform corruption model
+%% function for generating data that follows uniform corruption model
 %%------------------------------------------------
 %% Input Parameters: 
 %% n: the number of graph nodes (absolute permutations)
