@@ -2,7 +2,8 @@
 This repo contains matlab files for implementing the permutation synchronization solver of the following paper
 [Robust Multi-object Matching via Iterative Reweighting of the Graph Connection Laplacian](https://proceedings.neurips.cc/paper/2020/hash/ae06fbdc519bddaa88aa1b24bace4500-Abstract.html). Yunpeng Shi, Shaohan Li, Gilad Lerman. NeurIPS 2020.
 IRGCL often outperforms other permutation synchronization methods. The following figure compares the estimation errors of different algorithms under uniform corruption model.
-<img src="https://github.com/yunpeng-shi/IRGCL/blob/main/irgcl.png" width="500" height="400">
+
+<img src="https://github.com/yunpeng-shi/IRGCL/blob/main/irgcl.png" width="500" height="300">
 
 ## Implementation
 Put all the files in the same directory and run ``demo_IRGCL.m``. It calls functions ``Uniform_Topology.m`` or ``Nonuniform_Topology.m`` for generating the data that follow various corruption models. Then it calls function ``IRGCL.m`` to solve permutation synchronization. See comments in the begining of each function for details.
